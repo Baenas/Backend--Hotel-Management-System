@@ -3,6 +3,9 @@
 
 
 # Rutas Login
-| Metodo | Ruta   | Descripcion                    |
-| ------ | :----- | ------------------------------ |
-| GET    | /login | Formulario De inicio de sesion |
+| Metodo | Ruta    | Descripcion                       |
+| ------ | :------ | --------------------------------- |
+| GET    | /login  | Formulario De inicio de sesion    |
+| POST   | /login  | Procesar Inicio de sesion         |
+| GET    | /signUp | Formulario de creacion de usuario |
+| POST   | /signUp | Procesar alta de ususario         |
