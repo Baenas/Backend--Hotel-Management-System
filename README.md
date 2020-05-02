@@ -76,6 +76,18 @@
 | internalID  | Identificador interno  |  perogoro_2020_0  |  |
 | guestName  | Nombre del huesped vinculado |  Peter  Robinson Gomez Rogriguez|   |
 | guestID  | ID del huesped   |  100  |   |
+| roomType  | Tipo de habitacion   |  Triple  |   |
+| nights  | Numero de noches   | 2|   |
+| priceNight  | Precio por noche| 120€   | days X nights + Extras   |
+| day_From  | Dia desde   |  03/05/2020|   |
+| day_To  | Dia hasta   |  05/05/2020|   |
+| totalDays  | Dias totales  | 2  |
+| preTotalPrice  | Precio total   |  240€ | priceNight X totalDays    |
+
+
+
+
+
 
 
 
