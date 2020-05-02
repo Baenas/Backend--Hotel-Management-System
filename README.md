@@ -89,7 +89,7 @@
 
 ### Lista de extras
 | Extra   | Descripcion | Precio   | Cantidad  | Tiempo |
-| ------  | --------------------------------- |--------- | --------|
+| ------  | -------------------|-------------- |--------- | --------|
 | Cocacola     | Refresco  | 2€  | 3 | 04/05/2020|
 | Champan     | Bebida alcoholica  | 10€  | 1 | 05/05/2020|
 | Masaje     | Servicio  | 35€  | 3 | 05/05/2020|
