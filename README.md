@@ -24,12 +24,12 @@
 
 | Propiedad  | Descripcion | Ejemplo  | Valores  |
 | ------  | --------------------------------- |--------- | --------|
-| ID     | Identificador de la habityacion| 100 | |
-| roomName     | Nombre de la habitacion| Room 2|||
+| ID     | Identificador de la habityacion| 100 | Numero |
+| roomName     | Nombre de la habitacion| Room 2|   |
 | roomType  | Tipo  de la habitacion|  Doble  |  Individual /  Doble / Triple / Cuadruple  |
-| room_Floor   | Planta donde esta situada| P1||
-| room_Wifi   | Planta donde esta situada| P1||
-| room_Phone   | Planta donde esta situada| P1||
+| room_Floor   | Planta donde esta situada| P1|  |
+| room_Wifi   | Clave Wifi Habitacion|  xb12lsmdj  |  |
+| room_Phone   | Numero de telefono de la habication| P1|  11102  |
 
 
 
