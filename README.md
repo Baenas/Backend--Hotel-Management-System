@@ -88,7 +88,7 @@
 | Extras  | VER  LISTA DE EXTRAS  | [ , , , ] |Array de extras de este contrato| 
 
 ### Lista de extras
-| Extra   | Descripcion | Precio   | Cantidad  | Tiempo 
+| Extra   | Descripcion | Precio   | Cantidad  | Tiempo |
 | ------  | --------------------------------- |--------- | --------|
 | Cocacola     | Refresco  | 2€  | 3 | 04/05/2020|
 | Champan     | Bebida alcoholica  | 10€  | 1 | 05/05/2020|
