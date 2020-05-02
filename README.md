@@ -21,13 +21,17 @@
 | DELETE    | /rooms/  | Elimina una habitacion         |
 
 ### Propiedades
-
-| Propiedad  | Descripcion                       | Ejemplo
+ | Ejemplo 
+| Propiedad  | Descripcion | Ejemplo  | Valores 
 | ------  | --------------------------------- |--------- |
-| ID     | Identificador de la habityacion| 100
-| nombre     | Nombre de la habitacion|
-| ID     | Identificador de la habitacion|
-| ID     | Identificador de la habitacion|
+| ID     | Identificador de la habityacion| 100 
+| roomName     | Nombre de la habitacion| Room 2
+| roomType  | Tipo  de la habitacion|  Doble  |  Individual /  Doble / Triple / Cuadruple  
+| room_Floor   | Planta donde esta situada| P1
+| room_Wifi   | Planta donde esta situada| P1
+| room_Phone   | Planta donde esta situada| P1
+
+
 
 
 # Huespedes  
