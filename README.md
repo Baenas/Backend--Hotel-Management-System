@@ -83,7 +83,9 @@
 | day_To  | Dia hasta   |  05/05/2020|   |
 | totalDays  | Dias totales  | 2  |
 | preTotalPrice  | Precio total   |  240€ | priceNight X totalDays    |
-
+| roomAssign  | Habitacion para el huesped  | Room 2 | 
+| floorAssign  | PLanta  para el huesped  | Floor 1 | 
+| Extras  | VER  LISTA DE EXTRAS  | [ , , , ] |Array de extras de este contrato| 
 
 
 
