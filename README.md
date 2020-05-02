@@ -1,5 +1,3 @@
-# Documentacion BackEnd HMS
-
 
 
 # Rutas Login
@@ -15,4 +13,7 @@
 | Metodo | Ruta    | Descripcion                       |
 | ------ | :------ | --------------------------------- |
 | GET    | /rooms  | Muestra todas las habitaciones    |
-| GET    | /rooms/:id  | Muestra solo una habitacion    |
+| GET    | /rooms/:id  | Muestra solo una habitacion   |
+| POST    | /rooms/  | Añade una habitacion            | 
+| PUT    | /rooms/  | Actualiza una habitacion         | 
+| DELETE    | /rooms/  | Elimina una habitacion         | 
