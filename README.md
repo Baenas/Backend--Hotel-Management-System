@@ -38,11 +38,11 @@
 
 | Metodo | Ruta    | Descripcion                       |
 | ------ | :------ | --------------------------------- |
-| GET    | /rooms  | Muestra todos los huespedes    |
-| GET    | /rooms/:id  | Muestra solo un huesped   |
-| POST    | /rooms/  | Añade un nuevo huesped            |
-| PUT    | /rooms/  | Actualiza un huesped         |
-| DELETE    | /rooms/  | Elimina un huesped         
+| GET    | /guest  | Muestra todos los huespedes    |
+| GET    | /guest/:id  | Muestra solo un huesped   |
+| POST    | /guest/  | Añade un nuevo huesped            |
+| PUT    | /guest/  | Actualiza un huesped         |
+| DELETE    | /guest/  | Elimina un huesped         
 
 ### Propiedades
 
@@ -92,7 +92,7 @@
 | ------  | -------------------|-------------- |--------- | --------|
 | Cocacola     | Refresco  | 2€  | 3 | 04/05/2020|
 | Champan     | Bebida alcoholica  | 10€  | 1 | 05/05/2020|
-| Masaje     | Servicio  | 35€  | 3 | 05/05/2020|
+| Masaje     | Servicio  | 35€  | 1 | 05/05/2020|
 | Se ha cargado la lampara     | Desperfectos  | 120€  | 1 | 06/05/2020|
 
 
