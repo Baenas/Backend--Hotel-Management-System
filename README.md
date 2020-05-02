@@ -10,8 +10,8 @@
 | GET    | /signUp | Formulario de creacion de usuario |
 | POST   | /signUp | Procesar alta de ususario         |
 
-# Rutas Habitaciones
-
+#  Habitaciones
+Rutas
 | Metodo | Ruta    | Descripcion                       |
 | ------ | :------ | --------------------------------- |
 | GET    | /rooms  | Muestra todas las habitaciones    |
@@ -19,6 +19,7 @@
 | POST    | /rooms/  | Añade una habitacion            | 
 | PUT    | /rooms/  | Actualiza una habitacion         | 
 | DELETE    | /rooms/  | Elimina una habitacion         | 
+
 
 # Huespedes  
 
