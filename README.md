@@ -29,7 +29,7 @@
 | roomType  | Tipo  de la habitacion|  Doble  |  Individual /  Doble / Triple / Cuadruple  |
 | room_Floor   | Planta donde esta situada| P1|  |
 | room_Wifi   | Clave Wifi Habitacion|  xb12lsmdj  |  |
-| room_Phone   | Numero de telefono de la habication| P1|  11102  |
+| room_Phone   | Numero de telefono de la habication| 11102|    |
 
 
 
@@ -43,3 +43,23 @@
 | POST    | /rooms/  | Añade un nuevo huesped            |
 | PUT    | /rooms/  | Actualiza un huesped         |
 | DELETE    | /rooms/  | Elimina un huesped         
+
+### Propiedades
+
+| Propiedad  | Descripcion | Ejemplo  | Valores  |
+| ------  | --------------------------------- |--------- | --------|
+| ID     | Identificador del huesped | 100 | Numero |
+| guestName     | Nombre del huesped |  Peter Robinson|   |
+| guestFullName  | Nombre completo  del huesped|  Peter  Robinson Gomez Rogriguez  | |
+|guestId   | Pasaporte o dni | 111111111X|  |
+|guestAge   | Edad | 22|  |
+|guestEmail   | Email del huesped |abc@cba.bac|  |
+|guestPhone   | Telefono huesped | 93333333333|  |
+|guestCountry   | Pais de residencia  | Spain|  |
+|guestCity    | Ciudad  de residencia | Barcelona|  |
+
+
+
+
+
+
