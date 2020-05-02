@@ -21,7 +21,7 @@
 | DELETE    | /rooms/  | Elimina una habitacion         |
 
 ### Propiedades
- | Ejemplo 
+
 | Propiedad  | Descripcion | Ejemplo  | Valores 
 | ------  | --------------------------------- |--------- |
 | ID     | Identificador de la habityacion| 100 
