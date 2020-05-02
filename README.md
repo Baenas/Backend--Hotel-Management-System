@@ -1,3 +1,5 @@
+# Documentacion BackEnd HMS
+
 
 
 # Rutas Login
@@ -17,3 +19,13 @@
 | POST    | /rooms/  | Añade una habitacion            | 
 | PUT    | /rooms/  | Actualiza una habitacion         | 
 | DELETE    | /rooms/  | Elimina una habitacion         | 
+
+# Huespedes  
+
+| Metodo | Ruta    | Descripcion                       |
+| ------ | :------ | --------------------------------- |
+| GET    | /rooms  | Muestra todos los huespedes    |
+| GET    | /rooms/:id  | Muestra solo un huesped   |
+| POST    | /rooms/  | Añade un nuevo huesped            | 
+| PUT    | /rooms/  | Actualiza un huesped         | 
+| DELETE    | /rooms/  | Elimina un huesped         
