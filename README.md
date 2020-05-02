@@ -87,6 +87,16 @@
 | floorAssign  | PLanta  para el huesped  | Floor 1 | 
 | Extras  | VER  LISTA DE EXTRAS  | [ , , , ] |Array de extras de este contrato| 
 
+### Lista de extras
+| Extra   | Descripcion | Precio   | Cantidad  | Tiempo 
+| ------  | --------------------------------- |--------- | --------|
+| Cocacola     | Refresco  | 2€  | 3 | 04/05/2020|
+| Champan     | Bebida alcoholica  | 10€  | 1 | 05/05/2020|
+| Masaje     | Servicio  | 35€  | 3 | 05/05/2020|
+| Se ha cargado la lampara     | Desperfectos  | 120€  | 1 | 06/05/2020|
+
+
+
 
 
 
