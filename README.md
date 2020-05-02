@@ -11,14 +11,23 @@
 | POST   | /signUp | Procesar alta de ususario         |
 
 #  Habitaciones
-Rutas
+### Rutas
 | Metodo | Ruta    | Descripcion                       |
 | ------ | :------ | --------------------------------- |
 | GET    | /rooms  | Muestra todas las habitaciones    |
 | GET    | /rooms/:id  | Muestra solo una habitacion   |
-| POST    | /rooms/  | Añade una habitacion            | 
-| PUT    | /rooms/  | Actualiza una habitacion         | 
-| DELETE    | /rooms/  | Elimina una habitacion         | 
+| POST    | /rooms/  | Añade una habitacion            |
+| PUT    | /rooms/  | Actualiza una habitacion         |
+| DELETE    | /rooms/  | Elimina una habitacion         |
+
+### Propiedades
+
+| Propiedad  | Descripcion                       | Ejemplo
+| ------  | --------------------------------- |--------- |
+| ID     | Identificador de la habityacion| 100
+| nombre     | Nombre de la habitacion|
+| ID     | Identificador de la habitacion|
+| ID     | Identificador de la habitacion|
 
 
 # Huespedes  
@@ -27,6 +36,6 @@ Rutas
 | ------ | :------ | --------------------------------- |
 | GET    | /rooms  | Muestra todos los huespedes    |
 | GET    | /rooms/:id  | Muestra solo un huesped   |
-| POST    | /rooms/  | Añade un nuevo huesped            | 
-| PUT    | /rooms/  | Actualiza un huesped         | 
+| POST    | /rooms/  | Añade un nuevo huesped            |
+| PUT    | /rooms/  | Actualiza un huesped         |
 | DELETE    | /rooms/  | Elimina un huesped         
