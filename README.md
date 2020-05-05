@@ -42,8 +42,7 @@
 
 | Name  | Description | Example  | Values  |
 | ------  | --------------------------------- |--------- | --------|
-| ID     | Id room| 100 | Numero |
-
+| ID     | Id room | 100 | Numero |
 | roomName     | Room name| Room 2|   |
 | roomType  | Room type|  Doble  |  Single /  Double / Triple / Group  |
 | room_Floor   | Floor| P1|  |
