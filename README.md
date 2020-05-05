@@ -99,8 +99,11 @@
 
 | Name   | Descripcion |
 | ------  | -------------------|
-| guest     | can use all the app features |
+| employee     | can use all the app features |
 | admin     | Can manage the config settings  and users  |
+| guest_1111     | Can acces a private section  |
+
+
 
 
 
@@ -112,8 +115,15 @@
 |   Checking |
 |   Checkout |
 |   Find older chechkings |
+
+
+## Goals
+| Name   |
+| ------  |
 |   Make a private app for  the guests|
 |   The guest can request any hotel service by the private app|
+| |
+
 
 
 
