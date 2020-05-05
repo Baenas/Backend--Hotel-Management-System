@@ -105,8 +105,22 @@
 
 
 ## MVP 
+| Name   |
+| ------  |
+|   Create, Update,  Delete :  GUESTS |
+|   Create, Update,  Delete :  ROOMS |
+|   Checking |
+|   Checkout |
+|   Find older chechkings |
 
--- Create : Update : Delete  | GUESTS
+
+
+
+
+
+
+ 
+
 
 
 
