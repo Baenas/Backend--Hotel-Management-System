@@ -9,9 +9,9 @@
 | POST   | /login  | Log in         |
 | GET    | /signUp | Create user form |
 | POST   | /signUp | SignUp
-#  Habitaciones
-### Rutas
-| Metodo | Ruta    | Description                       |
+#  Rooms
+### Routes
+| Method | Route    | Description                       |
 | ------ | :------ | --------------------------------- |
 | GET    | /rooms  | All rooms    |
 | GET    | /rooms/:id  | One room   |
@@ -19,7 +19,7 @@
 | PUT    | /rooms/  | Update. Room          |
 | DELETE    | /rooms/  | Delete room          |
 
-### Propiedades
+### Data
 
 | Name  | Description | Example  | Values  |
 | ------  | --------------------------------- |--------- | --------|
@@ -33,7 +33,7 @@
 
 
 
-# Huespedes  
+# Guests  
 
 | Metodo | Ruta    | Descripcion                       |
 | ------ | :------ | --------------------------------- |
@@ -43,7 +43,7 @@
 | PUT    | /guest/  | Update a guest         |
 | DELETE    | /guest/  | Delete guest|         
 
-### Propiedades
+### Data
 
 | Propiedad  | Descripcion | Ejemplo  | Valores  |
 | ------  | --------------------------------- |--------- | --------|
@@ -67,7 +67,7 @@
 | GET    | /checking /:id  | find a checking   |
 
 
-### Propiedades
+### DATA
 
 | Propiedad  | Descripcion | Ejemplo  | Valores  |
 | ------  | --------------------------------- |--------- | --------|
@@ -86,7 +86,7 @@
 | floorAssign  | Floor room  | Floor 1 |
 | Extras  | Extra itema  | [ , , , ] |
 
-### Lista de extras
+### Extra list
 | Extra   | Descripcion | Precio   | Cantidad  | Tiempo |
 | ------  | -------------------|-------------- |--------- | --------|
 | coke     | Drink  | 2€  | 3 | 04/05/2020|
