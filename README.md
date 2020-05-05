@@ -5,10 +5,8 @@
 # Route Login
 | Method | Route    | Description                       |
 | ------ | :------ | --------------------------------- |
-| GET    | /login  | Log in form    |
 | POST   | /login  | Log in         |
-| GET    | /signUp | Create user form ???????|
-| POST   | /signUp | SignUp. ?????
+| POST   | /signup | SignUp |
 
 ## USERS 
 
@@ -30,16 +28,19 @@
 | PUT    | /rooms/  | Update. Room          |
 | DELETE    | /rooms/  | Delete room          |
 
-### Data
+### Data Rooms
 
 | Name  | Description | Example  | Values  |
 | ------  | --------------------------------- |--------- | --------|
 | ID     | Id room| 100 | Numero |
+
 | roomName     | Room name| Room 2|   |
-| roomType  | Room type|  Doble  |  Individual /  Doble / Triple / Cuadruple  |
+| roomType  | Room type|  Doble  |  Single /  Double / Triple / Group  |
 | room_Floor   | Floor| P1|  |
 | room_Wifi   | Wifi key|  xb12lsmdj  |  |
 | room_Phone   | Phone number| 11102|    |
+| room_price   | Price| 120|    |
+
 
 
 
@@ -54,7 +55,7 @@
 | PUT    | /guest/  | Update a guest         |
 | DELETE    | /guest/  | Delete guest|         
 
-### Data
+### Data Guest
 
 | Propiedad  | Descripcion | Ejemplo  | Valores  |
 | ------  | --------------------------------- |--------- | --------|
@@ -73,37 +74,28 @@
 
 | Metodo | Ruta    | Descripcion                       |
 | ------ | :------ | --------------------------------- |
-| GET    | /checking   | Form and search bar  |
 | POST    | /checking /  | checking             |
 | GET    | /checking /:id  | find a checking   |
 
 
-### DATA
+### DATA checkings
 
 | Propiedad  | Descripcion | Ejemplo  | Valores  |
 | ------  | --------------------------------- |--------- | --------|
 | ID     | Id | 100 | Numero |
-| internalID  | Internal id  |  perogoro_2020_0  |  |
-| guestName  | Guest name |  Peter  Robinson Gomez Rogriguez|   |
-| guestID  |  guest ID    |  100  |   |
-| roomType  | Room number   |  Triple  |   |
+| guestID  |  guest id    |  100  |   |
+| roomID  | room id  |    |   |
 | nights  | Nights   | 2|   |
-| priceNight  | night price| 120€   | days X nights + Extras   |
 | day_From  | From day   |  03/05/2020|   |
 | day_To  | To day   |  05/05/2020|   |
 | totalDays  | Total days  | 2  |
-| preTotalPrice  | Total price   |  240€ | priceNight X totalDays    |
-| roomAssign  | Room   | Room 2 |
-| floorAssign  | Floor room  | Floor 1 |
 | Extras  | Extra itema  | [ , , , ] |
 
 ### Extra list
-| Extra   | Descripcion | Precio   | Cantidad  | Tiempo |
-| ------  | -------------------|-------------- |--------- | --------|
-| coke     | Drink  | 2€  | 3 | 04/05/2020|
-| fanta     | Drink  | 10€  | 1 | 05/05/2020|
-| pizza     | food  | 35€  | 1 | 05/05/2020|
- | Lamp is broken    | Others  | 120€  | 1 | 06/05/2020|
+| Extra   | Descripcion | Precio   | Cantidad  | 
+| ------  | -------------------|-------------- |--------- | 
+| One more bed     | Item  | 20€  | 1 | 
+
 
 
 
