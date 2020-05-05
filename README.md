@@ -5,7 +5,7 @@
 # Route Login
 | Method | Route    | Description                       |
 | ------ | :------ | --------------------------------- |
-| Get   | /who  | SignUp |
+| Get   | /who  | who am i  |
 | POST   | /login  | Log in         |
 | POST   | /signup | SignUp |
 | POST   | /logout | LogOut |
