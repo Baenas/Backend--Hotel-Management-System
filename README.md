@@ -2,7 +2,7 @@
 
 
 
-# Route Login
+# Auth
 | Method | Route    | Description                       |
 | ------ | :------ | --------------------------------- |
 | Get   | /who  | who am i  |
@@ -10,10 +10,6 @@
 | POST   | /signup | SignUp |
 | POST   | /logout | LogOut |
 
-## Protected
-| Method | Route    | Description                       |
-| ------ | :------ | --------------------------------- |
-| Get   | /protected  | protected route |
 
 
 
