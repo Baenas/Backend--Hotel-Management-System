@@ -3,33 +3,32 @@
 
 
 # Route Login
-| Metodo | Ruta    | Descripcion                       |
+| Method | Route    | Description                       |
 | ------ | :------ | --------------------------------- |
-| GET    | /login  | Formulario De inicio de sesion    |
-| POST   | /login  | Procesar Inicio de sesion         |
-| GET    | /signUp | Formulario de creacion de usuario |
-| POST   | /signUp | Procesar alta de ususario         |
-
+| GET    | /login  | Log in form    |
+| POST   | /login  | Log in         |
+| GET    | /signUp | Create user form |
+| POST   | /signUp | SignUp
 #  Habitaciones
 ### Rutas
-| Metodo | Ruta    | Descripcion                       |
+| Metodo | Ruta    | Description                       |
 | ------ | :------ | --------------------------------- |
-| GET    | /rooms  | Muestra todas las habitaciones    |
-| GET    | /rooms/:id  | Muestra solo una habitacion   |
-| POST    | /rooms/  | Añade una habitacion            |
-| PUT    | /rooms/  | Actualiza una habitacion         |
-| DELETE    | /rooms/  | Elimina una habitacion         |
+| GET    | /rooms  | All rooms    |
+| GET    | /rooms/:id  | One room   |
+| POST    | /rooms/  | Add room            |
+| PUT    | /rooms/  | Update. Room          |
+| DELETE    | /rooms/  | Delete room          |
 
 ### Propiedades
 
-| Propiedad  | Descripcion | Ejemplo  | Valores  |
+| Name  | Description | Example  | Values  |
 | ------  | --------------------------------- |--------- | --------|
-| ID     | Identificador de la habityacion| 100 | Numero |
-| roomName     | Nombre de la habitacion| Room 2|   |
-| roomType  | Tipo  de la habitacion|  Doble  |  Individual /  Doble / Triple / Cuadruple  |
-| room_Floor   | Planta donde esta situada| P1|  |
-| room_Wifi   | Clave Wifi Habitacion|  xb12lsmdj  |  |
-| room_Phone   | Numero de telefono de la habication| 11102|    |
+| ID     | Id room| 100 | Numero |
+| roomName     | Room name| Room 2|   |
+| roomType  | Room type|  Doble  |  Individual /  Doble / Triple / Cuadruple  |
+| room_Floor   | Floor| P1|  |
+| room_Wifi   | Wifi key|  xb12lsmdj  |  |
+| room_Phone   | Phone number| 11102|    |
 
 
 
