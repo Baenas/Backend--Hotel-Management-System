@@ -1,8 +1,8 @@
-# Documentacion BackEnd HMS
+#  BackEnd HMS
 
 
 
-# Rutas Login
+# Route Login
 | Metodo | Ruta    | Descripcion                       |
 | ------ | :------ | --------------------------------- |
 | GET    | /login  | Formulario De inicio de sesion    |
