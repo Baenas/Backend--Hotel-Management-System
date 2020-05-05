@@ -22,7 +22,10 @@
 | admin     | Can manage the config settings  and users  |
 | guest_1111     | Can acces a private section  |
 
-
+{
+	username: String;
+	password: String;
+}
 
 #  Rooms
 ### Routes
