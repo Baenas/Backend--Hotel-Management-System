@@ -10,7 +10,10 @@
 | POST   | /signup | SignUp |
 | POST   | /logout | LogOut |
 
-
+{
+	username: String;
+	password: String;
+}
 
 
 
