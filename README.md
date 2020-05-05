@@ -5,8 +5,18 @@
 # Route Login
 | Method | Route    | Description                       |
 | ------ | :------ | --------------------------------- |
+| Get   | /who  | SignUp |
 | POST   | /login  | Log in         |
 | POST   | /signup | SignUp |
+| POST   | /logout | LogOut |
+
+## Protected
+| Method | Route    | Description                       |
+| ------ | :------ | --------------------------------- |
+| Get   | /protected  | protected route |
+
+
+
 
 ## USERS 
 
