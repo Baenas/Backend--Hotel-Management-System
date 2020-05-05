@@ -9,11 +9,6 @@
 | POST   | /login  | Log in         |
 | POST   | /signup | SignUp |
 | POST   | /logout | LogOut |
-```
-{
-	username: String;
-	password: String;
-}
 
 
 
@@ -24,12 +19,13 @@
 | employee     | can use all the app features |
 | admin     | Can manage the config settings  and users  |
 | guest_1111     | Can acces a private section  |
-
+```
 {
-	username: String;
-	password: String;
+	username: String,
+	password: String,
+	type: String,
 }
-
+```
 #  Rooms
 ### Routes
 | Method | Route    | Description                       |
@@ -80,6 +76,19 @@
 |guestCountry   | Country  | Spain|  |
 |guestCity    | City | Barcelona|  |
 
+```
+{
+	guestName: String,
+	guestFullName: String,
+	type: String,
+	guestIdCard:String,
+	guestAge: number,
+	guestEmail: String,
+	guestPhone: number,
+	guestCountry: String
+	guestcity:String
+}
+```
 
 # checking   
 
@@ -100,12 +109,20 @@
 | day_From  | From day   |  03/05/2020|   |
 | day_To  | To day   |  05/05/2020|   |
 | totalDays  | Total days  | 2  |
-| Extras  | Extra itema  | [ , , , ] |
 
-### Extra list
-| Extra   | Descripcion | Precio   | Cantidad  | 
-| ------  | -------------------|-------------- |--------- | 
-| One more bed     | Item  | 20€  | 1 | 
+
+
+```
+{
+	guestID:ObjectId<User>,
+	roomId : ObjectId<Room>,
+	nights:number,
+	day_from:Date,
+	day_to:Date,
+	
+}
+
+
 
 
 
