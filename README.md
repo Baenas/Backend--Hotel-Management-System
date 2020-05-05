@@ -112,6 +112,10 @@
 |   Checking |
 |   Checkout |
 |   Find older chechkings |
+|   Make a private app for  the guests|
+|   The guest can request any hotel service by the private app|
+
+
 
 
 
