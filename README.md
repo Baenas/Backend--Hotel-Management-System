@@ -7,8 +7,19 @@
 | ------ | :------ | --------------------------------- |
 | GET    | /login  | Log in form    |
 | POST   | /login  | Log in         |
-| GET    | /signUp | Create user form |
-| POST   | /signUp | SignUp
+| GET    | /signUp | Create user form ???????|
+| POST   | /signUp | SignUp. ?????
+
+## USERS 
+
+| Name   | Descripcion |
+| ------  | -------------------|
+| employee     | can use all the app features |
+| admin     | Can manage the config settings  and users  |
+| guest_1111     | Can acces a private section  |
+
+
+
 #  Rooms
 ### Routes
 | Method | Route    | Description                       |
@@ -93,15 +104,6 @@
 | fanta     | Drink  | 10€  | 1 | 05/05/2020|
 | pizza     | food  | 35€  | 1 | 05/05/2020|
  | Lamp is broken    | Others  | 120€  | 1 | 06/05/2020|
-
-## USERS 
-
-| Name   | Descripcion |
-| ------  | -------------------|
-| employee     | can use all the app features |
-| admin     | Can manage the config settings  and users  |
-| guest_1111     | Can acces a private section  |
-
 
 
 
