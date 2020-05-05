@@ -95,6 +95,12 @@
 | Masaje     | Servicio  | 35€  | 1 | 05/05/2020|
 | Se ha cargado la lampara     | Desperfectos  | 120€  | 1 | 06/05/2020|
 
+##USERS 
+
+| Name   | Descripcion |
+| ------  | -------------------|
+| guest     | can use all the app features |
+| admin     | Can manage the config settings  and users  |
 
 
 
