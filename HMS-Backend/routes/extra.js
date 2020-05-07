@@ -2,6 +2,10 @@ var express = require("express");
 var router = express.Router();
 const Extra = require("../models/Extra");
 /* GET home page. */
+
+const { checkIfLoggedIn } = require('./functions');
+router.use(checkIfLoggedIn);
+
 router.get("/", function (req, res, next) {
   Extra.find().then((listChecking) => {
     res.status(200).json(listChecking);

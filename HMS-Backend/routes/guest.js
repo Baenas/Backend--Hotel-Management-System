@@ -2,6 +2,9 @@ var express = require("express");
 var router = express.Router();
 const Guest = require("../models/Guest");
 //Mostrar todas
+const { checkIfLoggedIn } = require('./functions');
+router.use(checkIfLoggedIn);
+
 router.get("/", function (req, res, next) {
   Guest.find().then((guest) => {
     res.status(200).json(guest);

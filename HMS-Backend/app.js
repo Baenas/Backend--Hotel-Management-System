@@ -1,29 +1,23 @@
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
-
-var indexRouter = require("./routes/index");
-var roomsRouter = require("./routes/rooms");
-var guestRouter = require("./routes/guest");
-var checkingRouter = require("./routes/checking");
-var extraRouter = require("./routes/extra");
-
-
+const createError = require("http-errors");
+const express = require("express");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
 const mongoose = require('mongoose');
-var app = express();
+const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
+const  indexRouter = require("./routes/index");
+const roomsRouter = require("./routes/rooms");
+const guestRouter = require("./routes/guest");
+const checkingRouter = require("./routes/checking");
+const extraRouter = require("./routes/extra");
+const authRouter = require("./routes/auth");
+const cors = require('cors');
+
+const app = express();
 require('dotenv').config();
 const dbPath = process.env.MONGODB_URI;
 // view engine setup
-
-
-app.use(logger("dev"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
-
 
 mongoose
 	.connect(dbPath, {
@@ -38,12 +32,41 @@ mongoose
 		console.error(error);
 	});
 
+app.use(cors());
+app.use(logger("dev"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, "public")));
+
+app.use(
+	session({
+		store: new MongoStore({
+			mongooseConnection: mongoose.connection,
+			ttl: 24 * 60 * 60, // 1 day
+		}),
+		secret: 'hms',
+		resave: true,
+		saveUninitialized: true,
+		name: 'hms',
+		cookie: {
+			maxAge: 24 * 60 * 60 * 1000,
+		},
+	})
+);
+app.use(
+	cors({
+		origin:  "http://localhost:3001",
+	})
+);
+
 
 app.use("/", indexRouter);
 app.use("/rooms", roomsRouter);
 app.use("/guest", guestRouter);
 app.use("/checking", checkingRouter);
 app.use("/extra", extraRouter);
+app.use("/auth", authRouter);
 
 
 
