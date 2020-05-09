@@ -6,7 +6,7 @@ const logger = require("morgan");
 const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
-const  indexRouter = require("./routes/index");
+const indexRouter = require("./routes/index");
 const roomsRouter = require("./routes/rooms");
 const guestRouter = require("./routes/guest");
 const checkingRouter = require("./routes/checking");
@@ -56,7 +56,8 @@ app.use(
 );
 app.use(
 	cors({
-		origin:  "http://localhost:3001",
+		origin: "http://localhost:3001",
+
 	})
 );
 

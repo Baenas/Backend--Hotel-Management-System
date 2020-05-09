@@ -11,6 +11,7 @@ const checkUsernameAndPasswordNotEmpty = (req, res, next) => {
 
 const checkIfLoggedIn = (req, res, next) => {
 	if (req.session.currentUser) {
+		res.locals.currentUser = req.session.currentUser;
 		next();
 	} else {
 		res.status(401).json({ code: 'unauthorized' });

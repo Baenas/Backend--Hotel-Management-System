@@ -10,8 +10,7 @@ router.get('/whoami', (req, res, next) => {
 	}
 });
 
-const { checkUsernameAndPasswordNotEmpty } = require('./functions');
-
+const { checkUsernameAndPasswordNotEmpty, checkIfLoggedIn } = require('./functions');
 router.post('/login', checkUsernameAndPasswordNotEmpty, async (req, res, next) => {
 	const { username, password } = res.locals.auth;
 	try {
@@ -19,7 +18,7 @@ router.post('/login', checkUsernameAndPasswordNotEmpty, async (req, res, next) =
 		if (!user) {
 			return res.status(404).json({ code: 'not-found' });
 		}
-		if (password ==  user.password) {
+		if (password == user.password) {
 			req.session.currentUser = user;
 			return res.json(user);
 		}
@@ -30,16 +29,16 @@ router.post('/login', checkUsernameAndPasswordNotEmpty, async (req, res, next) =
 });
 
 router.post('/signup', checkUsernameAndPasswordNotEmpty, async (req, res, next) => {
-	const { username, password , type} = res.locals.auth;
+	const { username, password, type } = res.locals.auth;
 	try {
 		const user = await User.findOne({ username });
 		if (user) {
 			return res.status(422).json({ code: 'username-not-unique' });
 		}
 
- 
 
-		const newUser = await User.create({ username, password , type});
+
+		const newUser = await User.create({ username, password, type });
 		req.session.currentUser = newUser;
 		return res.json(newUser);
 	} catch (error) {
