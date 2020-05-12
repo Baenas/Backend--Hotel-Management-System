@@ -57,7 +57,7 @@ app.use(
 app.use(
 	cors({
 		origin: process.env.AlLOW,
-		origin: "http://localhost:3001"
+
 
 	})
 );
