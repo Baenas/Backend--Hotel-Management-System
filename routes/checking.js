@@ -1,10 +1,19 @@
 var express = require("express");
 var router = express.Router();
+const Guest = require("../models/Guest");
+const Room = require("../models/Room");
 const Checking = require("../models/Checking");
+
 /* GET home page. */
 router.get("/", function (req, res, next) {
   Checking.find().then(listChecking => {
-      res.status(200).json(listChecking)
+    Guest.populate(listChecking, { path: "guestID" }).then(listChecking => {
+      Room.populate(listChecking, { path: "roomID" }).then(listChecking => {
+
+        res.status(200).json(listChecking)
+
+      })
+    })
   });
 });
 //añadir checking

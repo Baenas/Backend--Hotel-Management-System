@@ -21,14 +21,15 @@ router.get("/:id", function (req, res, next) {
 });
 //añadir una habitacion
 router.post('/', (req, res, next) => {
-	const { roomName, roomType, roomFloor, roomWifi, roomPhone, roomPrice } = req.body;
+	const { roomName, roomType, roomFloor, roomWifi, roomPhone, roomPrice, state } = req.body;
 	Room.create({
 		roomName,
 		roomType,
 		roomFloor,
 		roomWifi,
 		roomPhone,
-		roomPrice
+		roomPrice,
+		state
 	})
 		.then(room => {
 			res.status(200).json(room)
@@ -48,14 +49,15 @@ router.delete('/:id', (req, res, next) => {
 
 router.put('/:id', (req, res, next) => {
 	const { id } = req.params;
-	const { roomName, roomType, roomFloor, roomWifi, roomPhone, roomPrice } = req.body;
+	const { roomName, roomType, roomFloor, roomWifi, roomPhone, roomPrice, state } = req.body;
 	Room.findByIdAndUpdate(id, {
 		roomName,
 		roomType,
 		roomFloor,
 		roomWifi,
 		roomPhone,
-		roomPrice
+		roomPrice,
+		state
 	})
 		.then(roomUpdated => {
 			if (roomUpdated) {

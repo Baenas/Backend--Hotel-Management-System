@@ -27,7 +27,10 @@ const roomSchema = new Schema({
         type: Number,
         required: true
     },
-    state: String
+    state: {
+        type: String,
+        default: "Empty"
+    }
 });
 
 const Room = mongoose.model("Room", roomSchema);
