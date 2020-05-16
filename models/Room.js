@@ -30,7 +30,10 @@ const roomSchema = new Schema({
     state: {
         type: String,
         default: "Empty"
-    }
+    },
+    guestID: { type: mongoose.Schema.Types.ObjectId, ref: "Guest" },
+
+
 });
 
 const Room = mongoose.model("Room", roomSchema);

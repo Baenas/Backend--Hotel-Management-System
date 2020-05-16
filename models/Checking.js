@@ -4,8 +4,8 @@ const { Schema } = mongoose;
 
 const checkingSchema = new Schema({
 
-  guestID: { type: mongoose.Schema.Types.ObjectId, ref: "Guest" },
-  roomID: { type: mongoose.Schema.Types.ObjectId, ref: "Room" },
+  guestID: { type: mongoose.Schema.Types.ObjectId, ref: "Guest", required: true },
+  roomID: { type: mongoose.Schema.Types.ObjectId, ref: "Room", required: true },
   nights: {
     type: Number,
     required: true,
@@ -21,7 +21,17 @@ const checkingSchema = new Schema({
   estado: {
     type: String,
     default: "En espera"
-  }
+  },
+  extra: [{ type: mongoose.Schema.Types.ObjectId, ref: "Extra" }],
+  extraguest: [{
+    name: {
+      type: String,
+    },
+    age: {
+      type: Number,
+    }
+  }],
+
 
 });
 
