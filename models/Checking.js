@@ -20,7 +20,6 @@ const checkingSchema = new Schema({
   },
   estado: {
     type: String,
-    default: "En espera"
   },
   extra: [{ type: mongoose.Schema.Types.ObjectId, ref: "Extra" }],
   extraguest: [{
@@ -29,8 +28,12 @@ const checkingSchema = new Schema({
     },
     age: {
       type: Number,
-    }
+    },
   }],
+  dashkey: {
+    type: String,
+    default: 01234
+  }
 
 
 });

@@ -20,6 +20,7 @@ router.post('/login', checkUsernameAndPasswordNotEmpty, async (req, res, next) =
 		}
 		if (password == user.password) {
 			req.session.currentUser = user;
+
 			return res.json(user);
 		}
 		return res.status(404).json({ code: 'not-found' });
@@ -45,5 +46,10 @@ router.post('/signup', checkUsernameAndPasswordNotEmpty, async (req, res, next) 
 		next(error);
 	}
 });
+router.get('/', checkIfLoggedIn, (req, res, next) => {
 
+	User.find().then((user) => {
+		return res.json(user)
+	})
+})
 module.exports = router;

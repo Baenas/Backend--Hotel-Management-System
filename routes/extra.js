@@ -3,28 +3,28 @@ var router = express.Router();
 const Extra = require("../models/Extra");
 /* GET home page. */
 
-const { checkIfLoggedIn } = require('./functions');
-router.use(checkIfLoggedIn);
+// const { checkIfLoggedIn } = require('./functions');
+// router.use(checkIfLoggedIn);
 
 router.get("/", function (req, res, next) {
-  Extra.find().then((listChecking) => {
-    res.status(200).json(listChecking);
-  });
+	Extra.find().then((listChecking) => {
+		res.status(200).json(listChecking);
+	});
 });
 //añadir extra
 router.post("/", (req, res, next) => {
-  const { type, name, description, price, date } = req.body;
-  Extra.create({
-    type,
-    name,
-    description,
-    price,
-    date,
-  })
-    .then((extra) => {
-      res.status(200).json(extra);
-    })
-    .catch(next);
+	const { type, name, description, price, date } = req.body;
+	Extra.create({
+		type,
+		name,
+		description,
+		price,
+		date,
+	})
+		.then((extra) => {
+			res.status(200).json(extra);
+		})
+		.catch(next);
 });
 //remove extra
 router.delete('/:id', (req, res, next) => {
@@ -38,9 +38,9 @@ router.delete('/:id', (req, res, next) => {
 });
 router.put('/:id', (req, res, next) => {
 	const { id } = req.params;
-const { type, name, description, price, date} = req.body;
+	const { type, name, description, price, date } = req.body;
 	Extra.findByIdAndUpdate(id, {
-type, name, description, price, date
+		type, name, description, price, date
 	})
 		.then(extraUpdated => {
 			if (extraUpdated) {

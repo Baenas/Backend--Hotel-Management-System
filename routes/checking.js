@@ -18,14 +18,16 @@ router.get("/", function (req, res, next) {
 });
 //añadir checking
 router.post("/", (req, res, next) => {
-  const { guestID, roomID, nights, day_From, day_To, estado } = req.body;
+  const { guestID, roomID, nights, day_From, day_To, estado, extraguest, dashkey } = req.body;
   Checking.create({
     guestID,
     roomID,
     nights,
     day_From,
     day_To,
-    estado
+    estado,
+    extraguest,
+    dashkey
   })
     .then((checking) => {
       res.status(200).json(checking);
@@ -44,10 +46,18 @@ router.get("/:id", function (req, res, next) {
     })
   });
 });
-router.patch('/:id', (req, res, next) => {
+router.patch('/array/:id', (req, res, next) => {
   const updateObject = req.body; // {last_name : "smith", age: 44}
   const id = req.params.id;
-  Checking.update({ _id: id }, { $push: updateObject }).then(room => {
+  Checking.findOneAndUpdate({ _id: id }, { $push: updateObject }).then(room => {
+    res.json(room);
+  })
+    .catch(next);
+});
+router.patch('/value/:id', (req, res, next) => {
+  const updateObject = req.body; // {last_name : "smith", age: 44}
+  const id = req.params.id;
+  Checking.findOneAndUpdate({ _id: id }, { $set: updateObject }).then(room => {
     res.json(room);
   })
     .catch(next);
